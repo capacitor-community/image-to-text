@@ -3,11 +3,18 @@ export interface CapacitorOcrPlugin {
    * Detect text in an image
    * @param options Options for text detection
    */
-  detectText(options: DetectTextOptions): Promise<TextDetections>;
+  detectText(
+    options: DetectTextFileOptions | DetectTextBase64Options,
+  ): Promise<TextDetections>;
 }
 
-export interface DetectTextOptions {
+export interface DetectTextFileOptions {
   filename: string;
+  orientation?: ImageOrientation;
+}
+
+export interface DetectTextBase64Options {
+  base64: string;
   orientation?: ImageOrientation;
 }
 

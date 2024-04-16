@@ -7,12 +7,12 @@
     "methods": [
       {
         "name": "detectText",
-        "signature": "(options: DetectTextOptions) => Promise<TextDetections>",
+        "signature": "(options: DetectTextFileOptions | DetectTextBase64Options) => Promise<TextDetections>",
         "parameters": [
           {
             "name": "options",
             "docs": "Options for text detection",
-            "type": "DetectTextOptions"
+            "type": "DetectTextFileOptions | DetectTextBase64Options"
           }
         ],
         "returns": "Promise<TextDetections>",
@@ -25,7 +25,8 @@
         "docs": "Detect text in an image",
         "complexTypes": [
           "TextDetections",
-          "DetectTextOptions"
+          "DetectTextFileOptions",
+          "DetectTextBase64Options"
         ],
         "slug": "detecttext"
       }
@@ -96,14 +97,39 @@
       ]
     },
     {
-      "name": "DetectTextOptions",
-      "slug": "detecttextoptions",
+      "name": "DetectTextFileOptions",
+      "slug": "detecttextfileoptions",
       "docs": "",
       "tags": [],
       "methods": [],
       "properties": [
         {
           "name": "filename",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "orientation",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "ImageOrientation"
+          ],
+          "type": "ImageOrientation"
+        }
+      ]
+    },
+    {
+      "name": "DetectTextBase64Options",
+      "slug": "detecttextbase64options",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "base64",
           "tags": [],
           "docs": "",
           "complexTypes": [],
