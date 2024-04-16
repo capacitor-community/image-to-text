@@ -37,7 +37,7 @@ public class CapacitorOcr extends Plugin {
                 call.reject("Could not load image from path");
                 return;
             }
-        }else if (base64 != null) {
+        } else if (base64 != null) {
             base64 = base64.substring(base64.indexOf(",") + 1);
             byte[] imageData = Base64.decode(base64, Base64.DEFAULT);
 
@@ -46,7 +46,7 @@ public class CapacitorOcr extends Plugin {
                 call.reject("Could not load image from base64");
                 return;
             }
-        }else{
+        } else {
             call.reject("Invalid image input");
             return;
         }

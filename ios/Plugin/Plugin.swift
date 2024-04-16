@@ -14,7 +14,7 @@ public class CapacitorOcr: CAPPlugin {
 
             guard let image = UIImage(contentsOfFile: filePath) else {
                 call.reject("Could not load image from path")
-                return;
+                return
             }
 
             TextDetector(call: call, image: image).detectText()
