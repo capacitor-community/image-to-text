@@ -3,9 +3,7 @@ export interface CapacitorOcrPlugin {
    * Detect text in an image
    * @param options Options for text detection
    */
-  detectText(
-    options: DetectTextFileOptions | DetectTextBase64Options,
-  ): Promise<TextDetections>;
+  detectText(options: DetectTextFileOptions | DetectTextBase64Options): Promise<TextDetections>;
 }
 
 export interface DetectTextFileOptions {

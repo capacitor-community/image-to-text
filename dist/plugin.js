@@ -13,8 +13,6 @@ var capacitorCapacitorOcr = (function (exports, core) {
 
     exports.Ocr = Ocr;
 
-    Object.defineProperty(exports, '__esModule', { value: true });
-
     return exports;
 
 })({}, capacitorExports);

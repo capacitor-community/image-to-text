@@ -44,7 +44,7 @@ class TextDetector {
               detectedText.add(textDetection)
             }
           }
-          call.success(JSObject().put("textDetections", JSONArray(detectedText)))
+          call.resolve(JSObject().put("textDetections", JSONArray(detectedText)))
         }
         .addOnFailureListener { e ->
           call.reject("FirebaseVisionTextRecognizer couldn't process the given image", e)

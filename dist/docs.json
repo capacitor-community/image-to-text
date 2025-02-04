@@ -179,5 +179,6 @@
       ]
     }
   ],
-  "typeAliases": []
+  "typeAliases": [],
+  "pluginConfigs": []
 }
