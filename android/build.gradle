@@ -9,7 +9,7 @@ ext {
 buildscript {
   ext.kotlin_version = project.hasProperty("kotlin_version") ? rootProject.ext.kotlin_version : '1.9.25'
   repositories {
-        google()    
+        google()
         mavenCentral()
     }
     dependencies {
@@ -47,10 +47,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_21
         targetCompatibility JavaVersion.VERSION_21
     }
+    kotlinOptions {
+      jvmTarget = JavaVersion.VERSION_21
+    }
 }
 
 repositories {
-    google()    
+    google()
     mavenCentral()
 }
 
