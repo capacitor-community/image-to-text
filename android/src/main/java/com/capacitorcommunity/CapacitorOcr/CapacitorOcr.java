@@ -6,15 +6,13 @@ import android.graphics.Matrix;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Base64;
-import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
-import com.google.firebase.ml.vision.common.FirebaseVisionImageMetadata;
-import java.io.File;
+import com.getcapacitor.annotation.CapacitorPlugin;
 import java.io.IOException;
 
-@NativePlugin
+@CapacitorPlugin
 public class CapacitorOcr extends Plugin {
 
     @PluginMethod
