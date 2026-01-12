@@ -11,5 +11,4 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Features
 
-* Capacitor 7 support ([#18](https://github.com/capacitor-community/image-to-text/issues/18)) ([434f79d](https://github.com/capacitor-community/image-to-text/commit/434f79d9817b073e0c50ace2c6b8d9698d88806a))
 * update to Capacitor 8 ([#28](https://github.com/capacitor-community/image-to-text/issues/28)) ([1638417](https://github.com/capacitor-community/image-to-text/commit/163841758202c987cbf374a1c45eb9f56f0d300c))
